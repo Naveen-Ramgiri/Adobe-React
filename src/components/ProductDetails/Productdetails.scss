@@ -1,0 +1,155 @@
+@import '../../Sass/Base/variables';
+
+.productdetails {
+    margin: 105px 0 25px 0;
+
+    &__left {
+        img {
+            width: 100%;
+        }
+        &-desc{
+            position: relative;
+            h2{
+                font-size: 36px;
+                color: $product-text;
+            }
+            h5{
+                font-size: 20px;
+                color: $product-text;
+                font-weight: 600;
+                margin: 20px 0;
+            }
+            p{
+                color: $product-text;
+                font-size: 16px;
+                padding-bottom: 20px;
+            }
+            P::after{
+                content: "";
+                background-color: $primary-color;
+                width: 15%;
+                position: absolute;
+                height: 5px;
+                bottom: 0%;
+                left: 0;
+            }
+            
+        }
+    }
+
+    &__right {
+        padding-left: 35px;
+
+        &-title {
+            font-size: 36px;
+            color: $product-text;
+        }
+
+        &-price {
+            color: $product-text;
+            font-size: 20px;
+        }
+
+        &-rating {
+            font-size: 14px;
+            color: $product-text;
+        }
+
+        &-description {
+            color: $product-text;
+            font-size: 12px;
+        }
+
+        h5 {
+            font-size: 20px;
+            color: $product-text;
+            margin-top: 20px;
+        }
+
+        hr {
+            margin: 10px 0;
+        }
+
+        &-colors img {
+            margin-right: 10px;
+        }
+
+        &-colors span:nth-child(1) img {
+            background-color: #1aa7ec;
+        }
+
+        &-colors span:nth-child(2) img {
+            background-color: #ee6b6e;
+        }
+
+        &-colors span:nth-child(3) img {
+            background-color: #000;
+        }
+
+        &-colors span:nth-child(4) img {
+            background-color: #808080;
+        }
+
+        &-size button {
+            border: 2px solid #91959C;
+            border-radius: 6px;
+            background-color: $teritary-color;
+            margin-right: 5px;
+            padding: 5px 15px;
+        }
+
+        &-quantity {
+            margin-bottom: 15px;
+
+            button:first-child {
+                background: #EAEBEB;
+                border: 2px solid #B5B8BA;
+                border-radius: 50%;
+                height: 32px;
+                width: 32px;
+                margin-right: 10px;
+            }
+
+            button:last-child {
+                background: #EAEBEB;
+                border: 2px solid #B5B8BA;
+                border-radius: 50%;
+                height: 32px;
+                width: 32px;
+                margin-left: 10px;
+            }
+
+            input {
+                border: 2px solid #91959C;
+                border-radius: 8px;
+                width: 114px;
+                height: 40px;
+                text-align: center;
+            }
+
+        }
+
+        &-share ul {
+            display: flex;
+            margin-top: 15px;
+
+            li {
+                list-style-type: none;
+                margin-right: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $product-text;
+
+                    i {
+                        font-size: 20px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}
